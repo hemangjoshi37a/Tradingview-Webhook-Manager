@@ -1,0 +1,6 @@
+dont forgot to link ...
+    <link href="/dist/output.css" rel="stylesheet">
+
+and start tailwind in cmd 
+
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch

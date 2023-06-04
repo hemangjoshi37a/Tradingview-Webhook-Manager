@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="/dist/output.css" rel="stylesheet">
+
+</head>
+<body>
+    <script src="./js/form_validation.js"></script>
+    <div class="check px-10 px-auto ">
+        <form name="loginForm" onsubmit="return validateForm()" method="post">
+            <div class="p-5 py-10 flex flex-col items-center">
+                <div class="text-center font-semibold text-3xl w-full p-5 border-b-2 border-red-500">Log-in</div>
+                <div class="p-5 pt-10 flex flex-col items-start gap-4">
+                    <div class="flex">      
+                        <div class="w-48 pr-5">  <label for="email">Enter your email:</label>  </div>
+                        <input type="email" id="email" name="email" class="border-2 border-slate-800 rounded-md px-2">    
+                    </div>   
+                    <div class="flex">      
+                        <div class="w-48 pr-5">  <label for="password">password:</label>  </div>
+                        <input type="password" id="password" name="password" class="border-2 border-slate-800 rounded-md px-2">    
+                    </div>                    
+                    <!-- <div class="flex">      
+                        <div class="w-48 pr-5">  <label for="confirm_password">confirm password:</label>  </div>
+                        <input type="password" id="confirm_password" name="confirm_password" class="border-2 border-slate-800 rounded-md px-2">    
+                    </div> -->
+                    <div class="w-full pt-10">      
+                        <button type="submit" name="Submit" class="w-full bg-indigo-500 p-2 px-5 rounded-full text-sm font-semibold text-white">   Login   </button> 
+                    </div>    
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
